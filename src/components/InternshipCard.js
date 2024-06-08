@@ -9,7 +9,6 @@ const InternshipCard = ({ title, description, skills, email }) => {
         <li><strong>Location:</strong> Remote</li>
         <li><strong>Position Type:</strong> Internship</li>
         <li><strong>Duration:</strong> 3 months</li>
-        <li><strong>Compansation:</strong> Unpaid</li>
       </ul>
       <p className="text-gray-700 text-base mb-4"><strong>Skills Required:</strong> {skills}</p>
       <p className="text-gray-700 mb-4">Please share your resume via email after clicking on the apply button.</p>
