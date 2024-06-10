@@ -11,7 +11,7 @@ const InternshipCard = ({ title, description, skills, email }) => {
         <li><strong>Duration:</strong> 3 months</li>
       </ul>
       <p className="text-gray-700 text-base mb-4"><strong>Skills Required:</strong> {skills}</p>
-      <p className="text-gray-700 mb-4">Please share your resume via email after clicking on the apply button.</p>
+      {/* <p className="text-gray-700 mb-4">Please share your resume via email after clicking on the apply button.</p> */}
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScMY6Dos28JVDpYmgXB9FK4QpepWxsn_rEH-mQ1AYiql4d_qA/viewform" className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200">
         Apply
       </a>
