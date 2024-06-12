@@ -165,11 +165,12 @@ const internships = [
   },
 ];
 
+
 const Home = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-center mb-8">Internship Opportunities</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {internships.map(internship => (
           <InternshipCard key={internship.id} {...internship} />
         ))}
