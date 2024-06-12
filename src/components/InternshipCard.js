@@ -51,8 +51,9 @@ const InternshipCard = ({ title, description, skills }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-6 transition duration-300 hover:shadow-lg flex justify-between item-center flex-col">
       <h2 className="text-2xl font-bold mb-2">{title}</h2>
-      <p className="text-gray-700 mb-2 line-clamp-2">{truncatedDescription}</p>
       <p className="text-gray-700 mb-4"><strong>Skills Required:</strong> {skills}</p>
+      <p> <strong> Job Description:</strong> </p>
+      <p className="text-gray-700 mb-2 line-clamp-2">{truncatedDescription}</p>
       <button onClick={toggleModal} className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200">
         View Job Description
       </button>
@@ -61,9 +62,9 @@ const InternshipCard = ({ title, description, skills }) => {
           <div className="bg-white p-8 rounded-lg z-50 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 max-w-lg overflow-hidden animate-scaleIn">
             <h2 className="text-2xl font-bold mb-4">{title}</h2>
             <p className="text-gray-700 mb-2">{description}</p>
-            <button onClick={toggleModal} className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200 mr-4">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScMY6Dos28JVDpYmgXB9FK4QpepWxsn_rEH-mQ1AYiql4d_qA/viewform" className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200 mr-4">
               Apply Now
-            </button>
+            </a>
             <button onClick={toggleModal} className="inline-block bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400 transition duration-200">
               Close
             </button>
