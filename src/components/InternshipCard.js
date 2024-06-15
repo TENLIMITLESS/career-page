@@ -99,8 +99,8 @@ const InternshipCard = ({ title, description, skills }) => {
         View Job Description
       </button>
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
-          <div className="bg-white p-8 rounded-lg z-50 max-w-sm w-full overflow-y-auto">
+        <div className="md:fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
+          <div className="bg-white p-4 rounded-lg z-50 w-full ">
             <h2 className="text-xl font-bold mb-4">{title}</h2>
             <p className="text-sm text-gray-700 mb-4">{description}</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScMY6Dos28JVDpYmgXB9FK4QpepWxsn_rEH-mQ1AYiql4d_qA/viewform" className="block w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200 mb-2 text-center">
